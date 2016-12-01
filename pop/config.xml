@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://yourdomain/pop" version="2.3.0" viewmodes="maximized">
+    <tizen:application id="Sij8avl7rs.Bubblepop" package="Sij8avl7rs" required_version="2.3"/>
+    <content src="index.html"/>
+    <feature name="http://tizen.org/feature/screen.size.all"/>
+    <feature name="http://tizen.org/privilege/application.read" required="true"/>
+    <feature name="http://tizen.org/privilege/content.read" required="true"/>
+    <feature name="http://tizen.org/privilege/content.write" required="true"/>
+    <feature name="http://tizen.org/privilege/application.launch" required="true"/>
+    <icon src="BubbleIcon2.png" height="117" width="117"/>
+    <name>Bubble pop2</name>
+    <tizen:profile name="mobile"/>
+    <tizen:setting screen-orientation="portrait" context-menu="enable" background-support="disable" encryption="disable" install-location="auto" hwkey-event="enable"/>
+</widget>

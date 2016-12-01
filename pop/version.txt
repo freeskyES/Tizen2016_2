@@ -1,0 +1,15 @@
+3.0.132
+var audio = document.getElementById('background_audio');
+
+document.getElementById('mute').addEventListener('click', function (e)
+{
+    e = e || window.event;
+    audio.muted = !audio.muted;
+    e.preventDefault();
+}, false);
+
+
+<audio id="background_audio" autoplay="autoplay">
+      <source src="sounds/bgm2.mp3">      
+</audio>
+<img id="mute" src="images/bubble.png" ></img>

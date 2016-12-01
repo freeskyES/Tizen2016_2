@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en" class="no-js">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Tizen Mobile Web Basic Template" />
+
+    <title>Tizen Mobile Web Basic Application</title>
+    
+    
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/effect1.css" />
+    <!--<script src="js/modernizr.custom.js"></script>-->
+                    
+   <!--  <meta http-equiv="page-exit" content="blendTrans(duration=0.3)"> 부드럽게 페이지 전환 -->
+                   
+           
+       
+</head>
+
+<body>
+    <div id="main" class="page">
+        <div id="ip-container" class="ip-container">
+        
+        <header class="ip-header">
+        <div class="ip-main">    
+            
+            <div class="codrops-demos" bottom=100px>
+                    <!--   <a href="index1.html" >Low Speed</a> -->
+            </div>
+            
+        
+        </div>
+        <div id="Low" style="position:absolute; left:26%; top:32%;"><a href="index1.html" style="padding-right:4em;font-size:2em;" >Low Speed</a></div>
+        <div id="medium" style="position:absolute; left:56%; top:50%;"><a href="index2.html" style="padding-right:0em;font-size:1.8em;" >Medium Speed</a></div>
+        <div id="high" style="position:absolute; left:28%; top:67%;"><a href="index3.html" style="padding-right:3em;font-size:2.1em;">High Speed</a></div>
+        
+        <script>
+        var backEvent = function(e) {
+            if ( e.keyName === "back" ) {
+            	window.tizen.application.getCurrentApplication().exit();
+            }
+        };
+        
+        // add eventListener for tizenhwkey (Back Button)
+        document.addEventListener( 'tizenhwkey', backEvent );
+        backEventListener = backEvent;
+
+          </script>
+        
+        
+        
+            
+        </header>    
+        </div>
+    </div>
+    <!--<script src="js/classie.js"></script>-->
+    <!--<script src="js/pathLoader.js"></script>-->
+    <!--<script src="js/main1.js"></script>-->
+</body>
+
+</html>
